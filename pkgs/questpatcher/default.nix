@@ -44,6 +44,6 @@ buildDotnetModule rec {
     homepage = "https://github.com/Lauriethefish/QuestPatcher";
     license = licenses.zlib;
     platforms = [ "x86_64-linux" ];
-    mainProgram = "questpatcher";
+    mainProgram = "QuestPatcher";
   };
 }
