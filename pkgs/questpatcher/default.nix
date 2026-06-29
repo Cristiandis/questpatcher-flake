@@ -37,7 +37,7 @@ buildDotnetModule rec {
     icu
   ];
 
-  executables = [ "questpatcher" ];
+  executables = [ "QuestPatcher" ];
 
   meta = with lib; {
     description = "Generic il2cpp modding tool for Oculus Quest (1/2/3) apps";
