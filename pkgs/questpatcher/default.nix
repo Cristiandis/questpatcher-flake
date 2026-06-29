@@ -9,6 +9,9 @@
   gtk3,
   glib,
   icu,
+  bash,
+  android-tools,
+  makeWrapper,
 }:
 
 buildDotnetModule rec {
@@ -35,6 +38,15 @@ buildDotnetModule rec {
     gtk3
     glib
     icu
+  ];
+
+  makeWrapperArgs = [
+    "--prefix PATH : ${
+      lib.makeBinPath [
+        bash
+        android-tools
+      ]
+    }"
   ];
 
   executables = [ "QuestPatcher" ];
