@@ -17,7 +17,10 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          config.permittedInsecurePackages = [ "dotnet-sdk-6.0.428" ];
+          config.permittedInsecurePackages = [
+            "dotnet-sdk-6.0.428"
+            "dotnet-runtime-6.0.36"
+          ];
         };
       in
       {
